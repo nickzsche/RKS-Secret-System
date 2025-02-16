@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 30px;
+}
+
+.input-section, .result-section {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+#result {
+    background-color: #f8f9fa;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #1a73e8;
+}
+
+.stats-bar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats-bar span {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.text-controls {
+    position: relative;
+}
+
+.char-count {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.key-section {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.result-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.result-controls button {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+/* Responsive tasarım için */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
